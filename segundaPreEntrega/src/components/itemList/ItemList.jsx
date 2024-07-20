@@ -1,8 +1,9 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./itemlist.css";
+import BtnCompra from "../btnCompra/BtnCompra";
 
-function ItemList({ nombre, descripcion, precio, imagen }) {
+function ItemList({ nombre, descripcion, precio, imagen, stock }) {
 	return (
 		<>
 			<div className="card">
@@ -12,6 +13,7 @@ function ItemList({ nombre, descripcion, precio, imagen }) {
 					<p className="card-text">{descripcion}</p>
 				</div>
 				<h3>${precio}</h3>
+				<BtnCompra stock={stock} />
 			</div>
 		</>
 	);

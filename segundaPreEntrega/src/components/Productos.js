@@ -6,6 +6,7 @@ export const Productos = [
 		precio: 8500,
 		imagen: "comida_perro_adulto.jpg",
 		categoria: "Alimentos",
+		stock: 20,
 	},
 	{
 		id: 2,
@@ -14,6 +15,7 @@ export const Productos = [
 		precio: 7800,
 		imagen: "comida_gato_adulto.jpg",
 		categoria: "Alimentos",
+		stock: 20,
 	},
 	{
 		id: 3,
@@ -22,6 +24,7 @@ export const Productos = [
 		precio: 3200,
 		imagen: "juguete_perro_mordedor.jpg",
 		categoria: "Juguetes",
+		stock: 20,
 	},
 	{
 		id: 4,
@@ -30,6 +33,7 @@ export const Productos = [
 		precio: 4500,
 		imagen: "rascador_gato.jpg",
 		categoria: "Juguetes",
+		stock: 20,
 	},
 	{
 		id: 5,
@@ -39,6 +43,7 @@ export const Productos = [
 		precio: 6000,
 		imagen: "correa_retractil_perro.jpg",
 		categoria: "Accesorios",
+		stock: 20,
 	},
 	{
 		id: 6,
@@ -47,6 +52,7 @@ export const Productos = [
 		precio: 1500,
 		imagen: "collar_gato.jpg",
 		categoria: "Accesorios",
+		stock: 20,
 	},
 	{
 		id: 7,
@@ -56,6 +62,7 @@ export const Productos = [
 		precio: 5200,
 		imagen: "shampoo_perro.jpg",
 		categoria: "Higiene",
+		stock: 20,
 	},
 	{
 		id: 8,
@@ -65,6 +72,7 @@ export const Productos = [
 		precio: 3000,
 		imagen: "arena_gatos.jpg",
 		categoria: "Higiene",
+		stock: 20,
 	},
 	{
 		id: 9,
@@ -74,6 +82,7 @@ export const Productos = [
 		precio: 5500,
 		imagen: "vitaminas_perros.jpg",
 		categoria: "Salud",
+		stock: 20,
 	},
 	{
 		id: 10,
@@ -82,6 +91,7 @@ export const Productos = [
 		precio: 7200,
 		imagen: "antipulgas_gatos.jpg",
 		categoria: "Salud",
+		stock: 20,
 	},
 	{
 		id: 11,
@@ -90,6 +100,7 @@ export const Productos = [
 		precio: 6400,
 		imagen: "comida_cachorros.jpg",
 		categoria: "Alimentos",
+		stock: 20,
 	},
 	{
 		id: 12,
@@ -98,6 +109,7 @@ export const Productos = [
 		precio: 9000,
 		imagen: "comida_gatos_senior.jpg",
 		categoria: "Alimentos",
+		stock: 20,
 	},
 	{
 		id: 13,
@@ -106,6 +118,7 @@ export const Productos = [
 		precio: 2800,
 		imagen: "pelota_goma_perro.jpg",
 		categoria: "Juguetes",
+		stock: 20,
 	},
 	{
 		id: 14,
@@ -115,6 +128,7 @@ export const Productos = [
 		precio: 2000,
 		imagen: "raton_juguete_gato.jpg",
 		categoria: "Juguetes",
+		stock: 20,
 	},
 	{
 		id: 15,
@@ -123,5 +137,6 @@ export const Productos = [
 		precio: 9800,
 		imagen: "transportadora.jpg",
 		categoria: "Accesorios",
+		stock: 20,
 	},
 ];

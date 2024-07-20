@@ -1,7 +1,15 @@
 import React from "react";
 import "./navbar.css";
+import { Productos } from "../Productos";
 
 function NavBar() {
+	let categorias = Productos.map((p) => p.categoria);
+	let categoriasFitradas = [];
+	categorias.forEach((categoria) => {
+		if (!categoriasFitradas.includes(categoria)) {
+			categoriasFitradas.push(categoria);
+		}
+	});
 	return (
 		<>
 			<nav className="navbar navbar-expand-lg bg-body-tertiary">
@@ -29,12 +37,12 @@ function NavBar() {
 							</li>
 							<li className="nav-item">
 								<a className="nav-link" href="#">
-									Features
+									Acerca de
 								</a>
 							</li>
 							<li className="nav-item">
 								<a className="nav-link" href="#">
-									Pricing
+									Como comprar
 								</a>
 							</li>
 							<li className="nav-item dropdown">
@@ -45,24 +53,16 @@ function NavBar() {
 									data-bs-toggle="dropdown"
 									aria-expanded="false"
 								>
-									Dropdown link
+									productos
 								</a>
 								<ul className="dropdown-menu">
-									<li>
-										<a className="dropdown-item" href="#">
-											Action
-										</a>
-									</li>
-									<li>
-										<a className="dropdown-item" href="#">
-											Another action
-										</a>
-									</li>
-									<li>
-										<a className="dropdown-item" href="#">
-											Something else here
-										</a>
-									</li>
+									{categoriasFitradas.map((categoria) => (
+										<li key={categoria}>
+											<a className="dropdown-item" href="#">
+												{categoria}
+											</a>
+										</li>
+									))}
 								</ul>
 							</li>
 						</ul>

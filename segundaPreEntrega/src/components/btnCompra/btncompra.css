@@ -1,0 +1,7 @@
+.divCompra {
+	margin: 0 auto;
+	display: flex;
+	width: 75%;
+	align-items: center;
+	justify-content: space-around;
+}
