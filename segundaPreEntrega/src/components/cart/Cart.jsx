@@ -1,14 +1,15 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { ImCart } from "react-icons/im";
+import "./cart.css";
 
 function Cart() {
 	const [cantidadProductos, setCantidadProductos] = useState(0);
 	return (
-		<>
-			<p>{cantidadProductos}</p>
+		<li className="carro">
 			<ImCart />
-		</>
+			<p>{cantidadProductos}</p>
+		</li>
 	);
 }
 

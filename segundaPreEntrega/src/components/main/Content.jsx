@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import "./content.css";
 
 function Content() {
-	return <div>Main</div>;
+	return <div></div>;
 }
 
 export default Content;
