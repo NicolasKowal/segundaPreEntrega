@@ -1,6 +1,9 @@
 import React from "react";
+import { ImCart } from "react-icons/im";
+import Cart from "../cart/Cart";
 import "./navbar.css";
 import { Productos } from "../Productos";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function NavBar() {
 	let categorias = Productos.map((p) => p.categoria);
@@ -64,6 +67,11 @@ function NavBar() {
 										</li>
 									))}
 								</ul>
+							</li>
+							<li className="nav-item">
+								<a className="nav-link" href="#">
+									<Cart />
+								</a>
 							</li>
 						</ul>
 					</div>
