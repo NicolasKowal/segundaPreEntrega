@@ -8,7 +8,9 @@ function ProductDetail() {
 	const producto = Productos.find((elemento) => elemento.id === parseInt(id));
 
 	if (!producto) {
-		return "404";
+		return (
+			<img src="https://http.dog/204.jpg" alt="https://http.dog/204.jpg" />
+		);
 	}
 
 	return (
