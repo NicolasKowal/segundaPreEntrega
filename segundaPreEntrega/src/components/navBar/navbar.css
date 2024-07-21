@@ -10,6 +10,7 @@ nav {
 	margin: 0 auto;
 	width: 50%;
 	display: flex;
+	background: whitesmoke;
 	justify-content: space-around;
 	align-items: center;
 }

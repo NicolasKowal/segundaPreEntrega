@@ -4,6 +4,8 @@
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
-	width: 75%;
-	gap: 20px;
+	width: 90%;
+	column-gap: 80px;
+	row-gap: 50px;
+	background: #16161d;
 }
