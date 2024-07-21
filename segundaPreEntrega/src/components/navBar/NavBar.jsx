@@ -55,9 +55,12 @@ function NavBar() {
 								<ul className="dropdown-menu">
 									{categoriasFitradas.map((categoria) => (
 										<li key={categoria}>
-											<a className="dropdown-item" href="#">
-												<Link to={categoria}>{categoria}</Link>
-											</a>
+											<Link
+												className="dropdown-item"
+												to={`productos/${categoria}`}
+											>
+												{categoria}
+											</Link>
 										</li>
 									))}
 								</ul>

@@ -19,9 +19,9 @@ function App() {
 					<Route index element={<Home />} />
 					<Route path="acerca-de" element={<AcercaDe />} />
 					<Route path="como-comprar" element={<ComoComprar />} />
-					<Route path="todos-los-productos" element={<ItemListContainer />} />
-					{/* <Route path="productos/:id" element={<ItemListContainer />} /> */}
-					{/* <Route path="*" element={<NoPage />} /> */}
+					{/* <Route path="todos-los-productos" element={<ItemListContainer />} /> */}
+					<Route path="productos/:categoria" element={<ItemListContainer />} />
+					<Route path="*" element={<NoPage />} />
 				</Route>
 			</Routes>
 		</BrowserRouter>

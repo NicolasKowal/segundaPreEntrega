@@ -13,7 +13,6 @@ function ItemList({ nombre, descripcion, precio, imagen, stock }) {
 				/>
 				<div className="card-body">
 					<h5 className="card-title">{nombre}</h5>
-					<p className="card-text">{descripcion}</p>
 					<p className="precio">${precio}</p>
 				</div>
 				<BtnCompra stock={stock} nombre={nombre} precio={precio} />
