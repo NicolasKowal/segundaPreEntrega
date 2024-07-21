@@ -6,10 +6,10 @@ import "./cart.css";
 function Cart() {
 	const [cantidadProductos, setCantidadProductos] = useState(0);
 	return (
-		<li className="carro">
+		<a className="carro">
 			<ImCart size="30px" />
 			<p>{cantidadProductos}</p>
-		</li>
+		</a>
 	);
 }
 

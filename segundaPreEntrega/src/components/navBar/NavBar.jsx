@@ -4,6 +4,7 @@ import Cart from "../cart/Cart";
 import "./navbar.css";
 import { Productos } from "../Productos";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Link } from "react-router-dom";
 
 function NavBar() {
 	let categorias = Productos.map((p) => p.categoria);
@@ -17,13 +18,14 @@ function NavBar() {
 		<>
 			<nav className="navbar navbar-expand-lg bg-body-tertiary">
 				<div className="container">
-					<a className="nav-link" aria-current="page" href="#">
+					<Link to={"/"}>
 						<img
 							className="imgIco"
 							src="./img/tienda-de-animales.png"
 							alt="img"
 						/>
-					</a>
+					</Link>
+
 					<button
 						className="navbar-toggler"
 						type="button"
@@ -38,9 +40,7 @@ function NavBar() {
 					<div className="collapse navbar-collapse" id="navbarNavDropdown">
 						<ul className="navbar-nav">
 							<li className="nav-item">
-								<a className="nav-link" aria-current="page" href="#">
-									Inicio
-								</a>
+								<Link to={"/"}>Home</Link>
 							</li>
 							<li className="nav-item dropdown">
 								<a
@@ -63,19 +63,13 @@ function NavBar() {
 								</ul>
 							</li>
 							<li className="nav-item">
-								<a className="nav-link" href="#">
-									Como comprar
-								</a>
+								<Link to={"como-comprar"}>Como comprar</Link>
 							</li>
 							<li className="nav-item">
-								<a className="nav-link" href="#">
-									Acerca de
-								</a>
-							</li>{" "}
+								<Link to={"acerca-de"}>Acerca De</Link>
+							</li>
 							<li className="nav-item">
-								<a className="nav-link" href="#">
-									<Cart />
-								</a>
+								<Cart />
 							</li>
 						</ul>
 					</div>
