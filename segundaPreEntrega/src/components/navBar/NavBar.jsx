@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 function NavBar() {
 	let categorias = Productos.map((p) => p.categoria);
-	let categoriasFitradas = [];
+	let categoriasFitradas = ["Todos"];
 	categorias.forEach((categoria) => {
 		if (!categoriasFitradas.includes(categoria)) {
 			categoriasFitradas.push(categoria);
@@ -56,7 +56,7 @@ function NavBar() {
 									{categoriasFitradas.map((categoria) => (
 										<li key={categoria}>
 											<a className="dropdown-item" href="#">
-												{categoria}
+												<Link to={categoria}>{categoria}</Link>
 											</a>
 										</li>
 									))}

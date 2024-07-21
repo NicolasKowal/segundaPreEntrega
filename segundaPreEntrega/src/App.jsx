@@ -9,10 +9,6 @@ import AcercaDe from "./components/AcercaDe";
 import ComoComprar from "./components/ComoComprar";
 import NoPage from "./components/NoPage";
 
-import Header from "./components/header/Header";
-import NavBar from "./components/navbar/NavBar";
-import Footer from "./components/footer/Footer";
-import Content from "./components/main/Content";
 import ItemListContainer from "./components/itemListContainer/ItemListContainer";
 
 function App() {
@@ -23,7 +19,9 @@ function App() {
 					<Route index element={<Home />} />
 					<Route path="acerca-de" element={<AcercaDe />} />
 					<Route path="como-comprar" element={<ComoComprar />} />
-					<Route path="*" element={<NoPage />} />
+					<Route path="todos-los-productos" element={<ItemListContainer />} />
+					{/* <Route path="productos/:id" element={<ItemListContainer />} /> */}
+					{/* <Route path="*" element={<NoPage />} /> */}
 				</Route>
 			</Routes>
 		</BrowserRouter>
