@@ -2,25 +2,13 @@ import React from "react";
 import "./header.css";
 function Header() {
 	return (
-		<>
-			<div
-				id="carouselExampleSlidesOnly"
-				className="carousel slide"
-				data-ride="carousel"
-			>
-				<div className="carousel-inner">
-					<div className="carousel-item active">
-						<img className="d-block w-100" src="..." alt="First slide" />
-					</div>
-					<div className="carousel-item">
-						<img className="d-block w-100" src="..." alt="Second slide" />
-					</div>
-					<div className="carousel-item">
-						<img className="d-block w-100" src="..." alt="Third slide" />
-					</div>
-				</div>
-			</div>
-		</>
+		<header>
+			<img
+				className="d-block w-100"
+				src="https://static.vecteezy.com/system/resources/previews/012/564/364/non_2x/horizontal-banner-with-winter-snowy-mountains-landscape-pines-on-the-background-of-mountains-and-hills-winter-scene-christmas-background-illustration-in-flat-cartoon-style-vector.jpg"
+				alt="First slide"
+			/>
+		</header>
 	);
 }
 

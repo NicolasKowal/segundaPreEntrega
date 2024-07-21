@@ -7,12 +7,15 @@ function ItemList({ nombre, descripcion, precio, imagen, stock }) {
 	return (
 		<>
 			<div className="card">
-				{/* <img src={imagen} className="card-img-top" alt={imagen} /> */}
+				<img
+					src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQgByBT5IiAT_a2x9pUVb4VMoOrlzHH7Jrzj-HB5jzHlR4lNLMS"
+					alt={imagen}
+				/>
 				<div className="card-body">
 					<h5 className="card-title">{nombre}</h5>
 					<p className="card-text">{descripcion}</p>
+					<p className="precio">${precio}</p>
 				</div>
-				<h3>${precio}</h3>
 				<BtnCompra stock={stock} nombre={nombre} precio={precio} />
 			</div>
 		</>

@@ -7,7 +7,7 @@ function Cart() {
 	const [cantidadProductos, setCantidadProductos] = useState(0);
 	return (
 		<li className="carro">
-			<ImCart />
+			<ImCart size="30px" />
 			<p>{cantidadProductos}</p>
 		</li>
 	);

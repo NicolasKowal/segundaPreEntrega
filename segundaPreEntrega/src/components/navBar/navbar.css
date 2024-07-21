@@ -1,0 +1,15 @@
+.imgIco {
+	height: 50px;
+}
+nav {
+	margin: 0 auto;
+	height: 75px;
+}
+
+.navbar-nav {
+	margin: 0 auto;
+	width: 50%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}

@@ -6,9 +6,9 @@ function BtnCompra({ nombre, precio, stock }) {
 	const [total, setTotal] = useState(1);
 	return (
 		<>
-			{" "}
 			<div className="divCompra">
 				<button
+					className="btn btn-dark"
 					onClick={() => {
 						cantidad != 0 ? setCantidad(cantidad - 1) : "";
 					}}
@@ -17,6 +17,7 @@ function BtnCompra({ nombre, precio, stock }) {
 				</button>
 				<p>{cantidad}</p>
 				<button
+					className="btn btn-dark"
 					onClick={() => {
 						cantidad < stock - 1 ? setCantidad(cantidad + 1) : "";
 					}}
@@ -25,6 +26,7 @@ function BtnCompra({ nombre, precio, stock }) {
 				</button>
 			</div>
 			<button
+				className="btn btn-dark"
 				onClick={() => {
 					if (cantidad > 0) {
 						setTotal(cantidad * precio);

@@ -16,9 +16,13 @@ function NavBar() {
 	return (
 		<>
 			<nav className="navbar navbar-expand-lg bg-body-tertiary">
-				<div className="container-fluid">
-					<a className="navbar-brand" href="#">
-						Navbar
+				<div className="container">
+					<a className="nav-link" aria-current="page" href="#">
+						<img
+							className="imgIco"
+							src="./img/tienda-de-animales.png"
+							alt="img"
+						/>
 					</a>
 					<button
 						className="navbar-toggler"
@@ -34,18 +38,8 @@ function NavBar() {
 					<div className="collapse navbar-collapse" id="navbarNavDropdown">
 						<ul className="navbar-nav">
 							<li className="nav-item">
-								<a className="nav-link active" aria-current="page" href="#">
-									Home
-								</a>
-							</li>
-							<li className="nav-item">
-								<a className="nav-link" href="#">
-									Acerca de
-								</a>
-							</li>
-							<li className="nav-item">
-								<a className="nav-link" href="#">
-									Como comprar
+								<a className="nav-link" aria-current="page" href="#">
+									Inicio
 								</a>
 							</li>
 							<li className="nav-item dropdown">
@@ -56,7 +50,7 @@ function NavBar() {
 									data-bs-toggle="dropdown"
 									aria-expanded="false"
 								>
-									productos
+									Productos
 								</a>
 								<ul className="dropdown-menu">
 									{categoriasFitradas.map((categoria) => (
@@ -68,6 +62,16 @@ function NavBar() {
 									))}
 								</ul>
 							</li>
+							<li className="nav-item">
+								<a className="nav-link" href="#">
+									Como comprar
+								</a>
+							</li>
+							<li className="nav-item">
+								<a className="nav-link" href="#">
+									Acerca de
+								</a>
+							</li>{" "}
 							<li className="nav-item">
 								<a className="nav-link" href="#">
 									<Cart />
