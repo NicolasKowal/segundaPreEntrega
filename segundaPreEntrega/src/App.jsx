@@ -7,8 +7,8 @@ import Layout from "./components/Layout";
 import Home from "./components/Home";
 import AcercaDe from "./components/AcercaDe";
 import ComoComprar from "./components/ComoComprar";
-import NoPage from "./components/NoPage";
-import ProductDetail from "./components/ProductDetail";
+import NoPage from "./components/noPage/NoPage";
+import ProductDetail from "./components/productDetail/ProductDetail";
 
 import ItemListContainer from "./components/itemListContainer/ItemListContainer";
 

@@ -1,10 +1,10 @@
 import React from "react";
-import { ImCart } from "react-icons/im";
-import Cart from "../cart/Cart";
-import "./navbar.css";
-import { Productos } from "../Productos";
-import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "react-router-dom";
+import Cart from "../cart/Cart";
+import { Productos } from "../Productos";
+
+import "./navbar.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function NavBar() {
 	let categorias = Productos.map((p) => p.categoria);
@@ -16,16 +16,15 @@ function NavBar() {
 	});
 	return (
 		<>
-			<nav className="navbar navbar-expand-lg bg-body-tertiary">
+			<nav className="position-sticky navbar navbar-expand-lg bg-body-tertiary">
 				<div className="container">
 					<Link to={"/"}>
 						<img
 							className="imgIco"
-							src="./img/tienda-de-animales.png"
+							src="https://cdn-icons-png.flaticon.com/128/16779/16779323.png"
 							alt="img"
 						/>
 					</Link>
-
 					<button
 						className="navbar-toggler"
 						type="button"

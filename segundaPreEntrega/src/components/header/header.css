@@ -1,7 +1,9 @@
 header {
 	height: 300px;
-}
-header img {
-	height: 100%;
-	aspect-ratio: 1/1;
+	position: relative;
+	background: url("https://img.freepik.com/fotos-premium/strbske-pleso-spring-view-lago-montana-eslovaquia_392053-20.jpg?w=996");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: 50;
 }

@@ -6,6 +6,7 @@
 	justify-content: space-around;
 }
 .divCompra p {
+	height: 100%;
 	align-items: center;
 	font-size: 1.3em;
 }

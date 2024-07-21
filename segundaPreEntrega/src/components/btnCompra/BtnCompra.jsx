@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./btncompra.css";
+
 function BtnCompra({ nombre, precio, stock }) {
 	const [cantidad, setCantidad] = useState(0);
 	const [total, setTotal] = useState(1);
@@ -15,7 +17,7 @@ function BtnCompra({ nombre, precio, stock }) {
 				>
 					-
 				</button>
-				<p>{cantidad}</p>
+				<p className="d-flex align-items-center">{cantidad}</p>
 				<button
 					className="btn btn-dark"
 					onClick={() => {

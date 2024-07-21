@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
 import { ImCart } from "react-icons/im";
+
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./cart.css";
 
 function Cart() {

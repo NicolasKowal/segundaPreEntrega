@@ -2,12 +2,13 @@
 	height: 50px;
 }
 nav {
-	margin: 0 auto;
 	height: 75px;
+	position: sticky;
+	top: 0; /* Ajusta para estar justo debajo del header */
+	z-index: 1000; /* Asegúrate de que esté por encima del header y otros elementos */
 }
 
 .navbar-nav {
-	margin: 0 auto;
 	width: 50%;
 	display: flex;
 	background: whitesmoke;

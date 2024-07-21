@@ -1,9 +1,10 @@
 import React from "react";
 import ItemList from "../itemList/ItemList";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "./itemlist.css";
 import { Productos } from "../Productos";
 import { useParams } from "react-router-dom";
+
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./itemlist.css";
 
 function ItemListContainer() {
 	const { categoria } = useParams();

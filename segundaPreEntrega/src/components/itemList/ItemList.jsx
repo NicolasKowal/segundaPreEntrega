@@ -1,14 +1,15 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import BtnCompra from "../btnCompra/BtnCompra";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./itemlist.css";
-import BtnCompra from "../btnCompra/BtnCompra";
-import { Link } from "react-router-dom";
 
 function ItemList({ id, nombre, precio, imagen, stock }) {
 	return (
 		<>
 			<div className="card">
-				<Link to={`producto/${id}`}>
+				<Link className="img-contenedor" to={`producto/${id}`}>
 					<img className="prod-img" src={imagen} alt={imagen} />
 				</Link>
 				<div className="card-body">
