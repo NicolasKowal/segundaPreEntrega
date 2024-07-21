@@ -26,6 +26,7 @@ function ItemListContainer() {
 						imagen={producto.imagen}
 						categoria={producto.categoria}
 						stock={producto.stock}
+						id={producto.id}
 					/>
 				</div>
 			))}

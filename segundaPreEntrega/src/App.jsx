@@ -8,6 +8,7 @@ import Home from "./components/Home";
 import AcercaDe from "./components/AcercaDe";
 import ComoComprar from "./components/ComoComprar";
 import NoPage from "./components/NoPage";
+import ProductDetail from "./components/ProductDetail";
 
 import ItemListContainer from "./components/itemListContainer/ItemListContainer";
 
@@ -19,8 +20,11 @@ function App() {
 					<Route index element={<Home />} />
 					<Route path="acerca-de" element={<AcercaDe />} />
 					<Route path="como-comprar" element={<ComoComprar />} />
-					{/* <Route path="todos-los-productos" element={<ItemListContainer />} /> */}
 					<Route path="productos/:categoria" element={<ItemListContainer />} />
+					<Route
+						path="productos/:categoria/producto/:id"
+						element={<ProductDetail />}
+					/>
 					<Route path="*" element={<NoPage />} />
 				</Route>
 			</Routes>
