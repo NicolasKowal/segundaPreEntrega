@@ -68,7 +68,7 @@ function NavBar() {
 								<Link to={"como-comprar"}>Como comprar</Link>
 							</li>
 							<li className="nav-item">
-								<Link to={"acerca-de"}>Acerca De</Link>
+								<Link to={"contacto"}>Contacto</Link>
 							</li>
 							<li className="nav-item">
 								<Cart />
