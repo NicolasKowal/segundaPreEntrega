@@ -6,9 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 function Contacto() {
 	return (
 		<div>
-			<h3 className="d-flex justify-content-center m-3">
-				Contactanos! estamos para ayudarte
-			</h3>
+			<h3 className="d-flex justify-content-center m-3">nuestras redes</h3>
 			<div className="container-redes">
 				<a href="">
 					<img
@@ -29,6 +27,9 @@ function Contacto() {
 					/>
 				</a>
 			</div>
+			<h3 className="d-flex justify-content-center m-3">
+				envianos un mensaje y nos pondremos en contacto con vos
+			</h3>
 			<form className="formulario">
 				<div className="fila">
 					<legend className="form-label fw-light">Nombre</legend>
