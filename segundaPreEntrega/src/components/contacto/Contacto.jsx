@@ -29,73 +29,51 @@ function Contacto() {
 					/>
 				</a>
 			</div>
-			<form className="d-flex flex-column w-50 mx-auto">
-				<div className="row">
-					<div className="col">
-						<legend className="form-label fw-light">Nombre</legend>
-					</div>
-					<div className="col">
-						<input
-							type="first_name"
-							name="first_name"
-							id=""
-							placeholder="Nombre"
-						/>
-					</div>
+			<form className="formulario">
+				<div className="fila">
+					<legend className="form-label fw-light">Nombre</legend>
+					<input
+						type="first_name"
+						name="first_name"
+						id=""
+						placeholder=" Nombre"
+					/>
 				</div>
-				<div className="row">
-					<div className="col">
-						<legend className="form-label fw-light">Apellido</legend>
-					</div>
-					<div className="col">
-						<input
-							type="last_name"
-							name="last_name"
-							id=""
-							placeholder="Apellido"
-						/>
-					</div>
+				<div className="fila">
+					<legend className="form-label fw-light">Apellido</legend>
+					<input
+						type="last_name"
+						name="last_name"
+						id=""
+						placeholder=" Apellido"
+					/>
 				</div>
-				<div className="row">
-					<div className="col">
-						<legend className="form-label fw-light">Telefono</legend>
-					</div>
-					<div className="col">
-						<input
-							type="phone"
-							name="phone"
-							id=""
-							placeholder=" 011 - 1234 - 5678"
-						/>
-					</div>
+				<div className="fila">
+					<legend className="form-label fw-light">Telefono</legend>
+					<input
+						type="phone"
+						name="phone"
+						id=""
+						placeholder=" 011 - 1234 - 5678"
+					/>
 				</div>
-				<div className="row">
-					<div className="col">
-						<legend className="form-label fw-light">Mail</legend>
-					</div>
-					<div className="col">
-						<input
-							type="email"
-							name="email"
-							id=""
-							placeholder="nombre@mail.com"
-						/>
-					</div>
+				<div className="fila">
+					<legend className="form-label fw-light">Mail</legend>
+					<input
+						type="email"
+						name="email"
+						id=""
+						placeholder=" nombre@mail.com"
+					/>
 				</div>
-				<div className="d-flex flex-column">
-					<div className="col">
-						<legend className="form-label d-flex justify-content-center fw-light">
-							Mensaje
-						</legend>
-					</div>
-					<div className="col">
-						<textarea
-							className="form-control"
-							name="text"
-							id=""
-							placeholder="Escribe tu mensaje aca"
-						></textarea>
-					</div>
+				<div className="mensaje">
+					<legend className="form-label fw-light">Mensaje</legend>
+					<textarea
+						className="form-control"
+						name="text"
+						id=""
+						placeholder="Escribe tu mensaje aca"
+					></textarea>
 				</div>
 				<div className="d-flex justify-content-around m-3">
 					<button className="btn btn-primary" type="submit">

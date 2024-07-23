@@ -12,3 +12,38 @@
 	transform: scale(1.1);
 	transition: 0.5s ease-in;
 }
+.formulario {
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+}
+.fila {
+	width: 100%;
+	height: 50px;
+	display: flex;
+	align-items: center;
+}
+.fila legend {
+	width: 30%;
+}
+.fila input {
+	width: 100%;
+	height: 70%;
+	border-radius: 7px;
+	border: 1px black solid;
+}
+.mensaje {
+	height: 150px;
+	margin-top: 15px;
+	display: flex;
+	flex-direction: column;
+}
+.mensaje legend {
+	height: 20%;
+	display: flex;
+	justify-content: center;
+}
+.mensaje textarea {
+	height: 80%;
+}
