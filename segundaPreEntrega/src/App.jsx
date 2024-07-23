@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./index.css";
 
 import Layout from "./components/Layout";
-import Home from "./components/Home";
+import Home from "./components/home/Home";
 import AcercaDe from "./components/AcercaDe";
 import ComoComprar from "./components/ComoComprar";
 import NoPage from "./components/noPage/NoPage";

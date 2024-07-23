@@ -1,9 +1,12 @@
 header {
-	height: 300px;
+	height: 350px;
 	position: relative;
-	background: url("https://img.freepik.com/fotos-premium/strbske-pleso-spring-view-lago-montana-eslovaquia_392053-20.jpg?w=996");
+	background: url("https://images.unsplash.com/photo-1623156080307-9ed1f7775be1?q=80&w=1938&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	z-index: 50;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
 }
