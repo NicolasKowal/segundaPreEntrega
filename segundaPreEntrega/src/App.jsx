@@ -6,7 +6,7 @@ import "./index.css";
 import Layout from "./components/Layout";
 import Home from "./components/home/Home";
 import Contacto from "./components/contacto/Contacto";
-import ComoComprar from "./components/ComoComprar";
+import ComoComprar from "./components/comoComprar/ComoComprar";
 import NoPage from "./components/noPage/NoPage";
 import ProductDetail from "./components/productDetail/ProductDetail";
 

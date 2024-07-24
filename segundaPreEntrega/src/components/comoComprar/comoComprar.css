@@ -1,0 +1,23 @@
+.contenedor-flechas {
+	height: 586px;
+	width: 100%;
+	column-gap: 50px;
+}
+.contenedor-flechas p {
+	color: white;
+	background: #2d2dbd;
+	padding: 10px;
+	height: 250px;
+	width: 300px;
+	border-radius: 30px;
+	font-size: 2em;
+	text-transform: capitalize;
+}
+
+.contenedor-flechas p:nth-child(2n) {
+	font-size: 5em;
+}
+
+.contenedor-flechas p:hover {
+	background: #4444c0;
+}
