@@ -1,11 +1,16 @@
 import React, { useState } from "react";
+import { productosComprados } from "../ListaCompra";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./btncompra.css";
 
 function BtnCompra({ nombre, precio, stock }) {
 	const [cantidad, setCantidad] = useState(0);
-	const [total, setTotal] = useState(1);
+
+	const HandleClick = (nombre, cantidad) => {
+		cantidad > 0 ? productosComprados.push({ nombre, precio, cantidad }) : "";
+		console.log(productosComprados);
+	};
 	return (
 		<>
 			<div className="divCompra">
@@ -30,10 +35,7 @@ function BtnCompra({ nombre, precio, stock }) {
 			<button
 				className="btn btn-dark"
 				onClick={() => {
-					if (cantidad > 0) {
-						setTotal(cantidad * precio);
-						console.log(cantidad, nombre, total);
-					}
+					HandleClick(nombre, cantidad);
 				}}
 			>
 				Agregar al carrito
