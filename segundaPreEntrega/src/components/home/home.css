@@ -1,22 +1,15 @@
-img {
-	border-radius: 10px;
-	height: 400px;
+.container-img {
+	height: 300px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	background: red;
 }
-
-.fancy-border-radius {
-	border-radius: 52% 48% 46% 54% / 57% 40% 60% 43%;
-	width: 400px;
-	height: 400px;
-	background: #ad5389;
-	background: -webkit-linear-gradient(to right, #3c1053, #ad5389);
-	background: linear-gradient(to right, #3c1053, #ad5389);
-	color: white;
+.container-img img {
+	height: 200px;
+	border-radius: 50%;
 }
-
-.distancia {
-	margin: 0 auto;
-	width: 95%;
-}
-.col {
-	margin-block: 50px;
+.container-img img :has(:hover) {
+	filter: opacity(25%);
 }

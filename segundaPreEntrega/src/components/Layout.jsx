@@ -8,7 +8,6 @@ function Layout() {
 	return (
 		<>
 			<NavBar />
-			<Header />
 			<Outlet />
 			<Footer />
 		</>
