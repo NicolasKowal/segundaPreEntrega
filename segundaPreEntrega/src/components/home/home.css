@@ -1,15 +1,25 @@
 .container-img {
-	height: 300px;
+	height: 400px;
 	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-	background: red;
+	background: grey;
 }
-.container-img img {
-	height: 200px;
+.container-img a img {
+	height: 250px;
+	width: 250px;
+	aspect-ratio: 1/1;
 	border-radius: 50%;
+	filter: opacity(100%);
+	transition: filter 0.3s ease;
 }
-.container-img img :has(:hover) {
-	filter: opacity(25%);
+
+.container-img img:hover {
+	filter: opacity(100%);
+	scale: 1.1;
+}
+
+.container-img img:not(:hover) {
+	filter: opacity(75%);
 }

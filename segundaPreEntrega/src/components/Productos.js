@@ -9,11 +9,6 @@ export const Productos = [
 		categoria: "Alimentos",
 		stock: 50,
 		tags: ["perro", "adulto", "comida", "proteínas", "fibras"],
-		palabrasClave: [
-			"alimentación canina",
-			"salud digestiva",
-			"brillo del pelaje",
-		],
 	},
 	{
 		id: 1002,
@@ -25,7 +20,6 @@ export const Productos = [
 		categoria: "Higiene",
 		stock: 30,
 		tags: ["gato", "arena", "sanitaria", "absorción", "control de olores"],
-		palabrasClave: ["higiene felina", "control de olores", "sin polvo"],
 	},
 	{
 		id: 1003,
@@ -37,11 +31,6 @@ export const Productos = [
 		categoria: "Juguetes",
 		stock: 20,
 		tags: ["perro", "juguete", "hueso", "resistente", "masticar"],
-		palabrasClave: [
-			"juguete para perros",
-			"dientes limpios",
-			"materiales no tóxicos",
-		],
 	},
 	{
 		id: 1004,
@@ -53,11 +42,6 @@ export const Productos = [
 		categoria: "Accesorios",
 		stock: 40,
 		tags: ["gato", "collar", "reflectante", "visibilidad", "ajustable"],
-		palabrasClave: [
-			"seguridad felina",
-			"visibilidad nocturna",
-			"accesorios para gatos",
-		],
 	},
 	{
 		id: 1005,
@@ -69,11 +53,6 @@ export const Productos = [
 		categoria: "Hábitats",
 		stock: 15,
 		tags: ["conejo", "jaula", "espaciosa", "resistente", "fácil de limpiar"],
-		palabrasClave: [
-			"hábitat para conejos",
-			"jaulas para mascotas",
-			"interior y exterior",
-		],
 	},
 	{
 		id: 1006,
@@ -85,11 +64,6 @@ export const Productos = [
 		categoria: "Medicamentos",
 		stock: 60,
 		tags: ["perro", "vitaminas", "suplemento", "salud", "inmunológico"],
-		palabrasClave: [
-			"suplemento vitamínico",
-			"salud canina",
-			"tabletas masticables",
-		],
 	},
 	{
 		id: 1007,
@@ -101,11 +75,6 @@ export const Productos = [
 		categoria: "Alimentos",
 		stock: 45,
 		tags: ["gato", "adulto", "comida", "proteínas", "taurina"],
-		palabrasClave: [
-			"alimentación felina",
-			"salud cardiovascular",
-			"nutrición ocular",
-		],
 	},
 	{
 		id: 1008,
@@ -117,7 +86,6 @@ export const Productos = [
 		categoria: "Higiene",
 		stock: 35,
 		tags: ["perro", "shampoo", "suave", "desodoriza", "hipoalergénico"],
-		palabrasClave: ["cuidado del pelaje", "piel sensible", "higiene canina"],
 	},
 	{
 		id: 1009,
@@ -129,7 +97,6 @@ export const Productos = [
 		categoria: "Juguetes",
 		stock: 25,
 		tags: ["gato", "juguete", "ratón", "interactivo", "caza"],
-		palabrasClave: ["juguete felino", "instinto de caza", "entretenimiento"],
 	},
 	{
 		id: 1010,
@@ -141,7 +108,6 @@ export const Productos = [
 		categoria: "Accesorios",
 		stock: 10,
 		tags: ["perro", "cama", "mediana", "suave", "ergonómica"],
-		palabrasClave: ["comodidad canina", "apoyo ergonómico", "cama lavable"],
 	},
 	{
 		id: 1011,
@@ -153,11 +119,6 @@ export const Productos = [
 		categoria: "Hábitats",
 		stock: 5,
 		tags: ["reptiles", "terrario", "vidrio", "ventilación", "calefacción"],
-		palabrasClave: [
-			"hábitat para reptiles",
-			"ventilación y calefacción",
-			"fácil de limpiar",
-		],
 	},
 	{
 		id: 1012,
@@ -169,11 +130,6 @@ export const Productos = [
 		categoria: "Medicamentos",
 		stock: 50,
 		tags: ["perro", "antiparasitario", "pulgas", "garrapatas", "pipetas"],
-		palabrasClave: [
-			"control de parásitos",
-			"fácil aplicación",
-			"protección efectiva",
-		],
 	},
 	{
 		id: 1013,
@@ -185,11 +141,6 @@ export const Productos = [
 		categoria: "Alimentos",
 		stock: 55,
 		tags: ["gato", "kitten", "comida", "proteínas", "DHA"],
-		palabrasClave: [
-			"nutrición para gatitos",
-			"crecimiento saludable",
-			"desarrollo cerebral",
-		],
 	},
 	{
 		id: 1014,
@@ -201,11 +152,6 @@ export const Productos = [
 		categoria: "Juguetes",
 		stock: 30,
 		tags: ["perro", "juguete", "pelota", "goma", "resistente"],
-		palabrasClave: [
-			"entretenimiento canino",
-			"juegos activos",
-			"material duradero",
-		],
 	},
 	{
 		id: 1015,
@@ -217,11 +163,6 @@ export const Productos = [
 		categoria: "Accesorios",
 		stock: 10,
 		tags: ["perro", "cucha", "grande", "resistente", "impermeable"],
-		palabrasClave: [
-			"protección contra el frío",
-			"cucha para exteriores",
-			"fácil de limpiar",
-		],
 	},
 	{
 		id: 1016,
@@ -233,11 +174,6 @@ export const Productos = [
 		categoria: "Higiene",
 		stock: 40,
 		tags: ["perro", "cepillos", "cuidado", "pelaje", "desenredar"],
-		palabrasClave: [
-			"cuidado del pelaje",
-			"herramientas de grooming",
-			"adecuado para todas las razas",
-		],
 	},
 	{
 		id: 1017,
@@ -249,11 +185,6 @@ export const Productos = [
 		categoria: "Accesorios",
 		stock: 20,
 		tags: ["gato", "caja", "transporte", "resistente", "malla"],
-		palabrasClave: [
-			"seguridad en transporte",
-			"visitas al veterinario",
-			"práctica y cómoda",
-		],
 	},
 	{
 		id: 1018,
@@ -265,11 +196,6 @@ export const Productos = [
 		categoria: "Alimentos",
 		stock: 50,
 		tags: ["perro", "cachorro", "comida", "nutrientes", "cordero"],
-		palabrasClave: [
-			"alimentación para cachorros",
-			"nutrición esencial",
-			"crecimiento saludable",
-		],
 	},
 	{
 		id: 1019,
@@ -281,11 +207,6 @@ export const Productos = [
 		categoria: "Accesorios",
 		stock: 25,
 		tags: ["gato", "manta", "suave", "cálida", "lavable"],
-		palabrasClave: [
-			"comodidad felina",
-			"descanso cálido",
-			"accesorios para gatos",
-		],
 	},
 	{
 		id: 1020,
@@ -297,11 +218,6 @@ export const Productos = [
 		categoria: "Accesorios",
 		stock: 30,
 		tags: ["perro", "cinturón", "seguridad", "automóvil", "ajustable"],
-		palabrasClave: [
-			"seguridad en el viaje",
-			"protección canina",
-			"compatible con vehículos",
-		],
 	},
 	{
 		id: 1021,
@@ -313,11 +229,6 @@ export const Productos = [
 		categoria: "Hábitats",
 		stock: 20,
 		tags: ["reptiles", "lámpara", "UV", "UVB", "bienestar"],
-		palabrasClave: [
-			"luz UV esencial",
-			"metabolismo del calcio",
-			"bienestar de reptiles",
-		],
 	},
 	{
 		id: 1022,
@@ -329,7 +240,6 @@ export const Productos = [
 		categoria: "Juguetes",
 		stock: 15,
 		tags: ["perro", "piñata", "interactiva", "premios", "resistente"],
-		palabrasClave: ["estimulación mental", "entretenimiento", "golosinas"],
 	},
 	{
 		id: 1023,
@@ -341,11 +251,6 @@ export const Productos = [
 		categoria: "Higiene",
 		stock: 40,
 		tags: ["gato", "cepillo", "deslanador", "pelaje largo", "fácil de limpiar"],
-		palabrasClave: [
-			"eliminación de pelos sueltos",
-			"cuidado del pelaje",
-			"fácil mantenimiento",
-		],
 	},
 	{
 		id: 1024,
@@ -357,11 +262,6 @@ export const Productos = [
 		categoria: "Alimentos",
 		stock: 25,
 		tags: ["conejo", "adulto", "comida", "fibra", "nutrientes"],
-		palabrasClave: [
-			"alimentación para conejos",
-			"salud digestiva",
-			"nutrición esencial",
-		],
 	},
 	{
 		id: 1025,
@@ -373,11 +273,6 @@ export const Productos = [
 		categoria: "Accesorios",
 		stock: 20,
 		tags: ["gato", "rascador", "nails", "muebles", "sisal"],
-		palabrasClave: [
-			"mantenimiento de uñas",
-			"prevención de daños",
-			"accesorio necesario",
-		],
 	},
 	{
 		id: 1026,
@@ -389,11 +284,6 @@ export const Productos = [
 		categoria: "Medicamentos",
 		stock: 45,
 		tags: ["perro", "calcio", "suplemento", "huesos", "dientes"],
-		palabrasClave: [
-			"fortalecimiento óseo",
-			"suplemento nutricional",
-			"salud dental",
-		],
 	},
 	{
 		id: 1027,
@@ -405,11 +295,6 @@ export const Productos = [
 		categoria: "Accesorios",
 		stock: 15,
 		tags: ["perro", "bebedero", "automático", "agua", "fresca"],
-		palabrasClave: [
-			"suministro continuo de agua",
-			"ideal para varios perros",
-			"fácil mantenimiento",
-		],
 	},
 	{
 		id: 1028,
@@ -421,11 +306,6 @@ export const Productos = [
 		categoria: "Higiene",
 		stock: 25,
 		tags: ["gato", "caja", "arena", "control de olores", "resistente"],
-		palabrasClave: [
-			"control de olores",
-			"fácil limpieza",
-			"resistencia a manchas",
-		],
 	},
 	{
 		id: 1029,
@@ -437,11 +317,6 @@ export const Productos = [
 		categoria: "Juguetes",
 		stock: 30,
 		tags: ["perro", "juguete", "peluche", "suave", "sonido"],
-		palabrasClave: [
-			"juguete suave",
-			"diversión y abrazos",
-			"material duradero",
-		],
 	},
 	{
 		id: 1030,
@@ -453,11 +328,6 @@ export const Productos = [
 		categoria: "Hábitats",
 		stock: 10,
 		tags: ["acuario", "accesorios", "filtro", "calentador", "luces LED"],
-		palabrasClave: [
-			"ambiente óptimo",
-			"accesorios esenciales",
-			"mantenimiento del acuario",
-		],
 	},
 	{
 		id: 1031,
@@ -469,11 +339,6 @@ export const Productos = [
 		categoria: "Alimentos",
 		stock: 40,
 		tags: ["perro", "senior", "comida", "antioxidantes", "nutrientes"],
-		palabrasClave: [
-			"alimentación para perros mayores",
-			"apoyo a la salud",
-			"nutrición específica",
-		],
 	},
 	{
 		id: 1032,
@@ -485,11 +350,6 @@ export const Productos = [
 		categoria: "Accesorios",
 		stock: 20,
 		tags: ["perro", "ropa", "cómoda", "estilizada", "abrigado"],
-		palabrasClave: [
-			"vestimenta para perros",
-			"comodidad y estilo",
-			"abrigo para climas fríos",
-		],
 	},
 	{
 		id: 1033,
@@ -501,11 +361,6 @@ export const Productos = [
 		categoria: "Alimentos",
 		stock: 35,
 		tags: ["gato", "senior", "comida", "proteínas", "vitaminas"],
-		palabrasClave: [
-			"alimentación para gatos mayores",
-			"salud felina",
-			"nutrición avanzada",
-		],
 	},
 	{
 		id: 1034,
@@ -517,11 +372,6 @@ export const Productos = [
 		categoria: "Hábitats",
 		stock: 15,
 		tags: ["mamíferos", "kit", "jaula", "comida", "accesorios"],
-		palabrasClave: [
-			"cuidado completo",
-			"hábitat para pequeños mamíferos",
-			"todo en uno",
-		],
 	},
 	{
 		id: 1035,
@@ -533,11 +383,6 @@ export const Productos = [
 		categoria: "Accesorios",
 		stock: 25,
 		tags: ["gato", "camita", "suave", "acogedora", "lavable"],
-		palabrasClave: [
-			"comodidad felina",
-			"acogedora para gatos",
-			"material duradero",
-		],
 	},
 	{
 		id: 1036,
@@ -549,11 +394,6 @@ export const Productos = [
 		categoria: "Alimentos",
 		stock: 50,
 		tags: ["perro", "razas pequeñas", "comida", "nutrientes", "proteínas"],
-		palabrasClave: [
-			"alimentación específica",
-			"nutrición para razas pequeñas",
-			"sabor adaptado",
-		],
 	},
 	{
 		id: 1037,
@@ -565,11 +405,6 @@ export const Productos = [
 		categoria: "Medicamentos",
 		stock: 40,
 		tags: ["gato", "antipulgas", "pipetas", "eficaz", "fácil de aplicar"],
-		palabrasClave: [
-			"control de pulgas",
-			"tratamiento seguro",
-			"fácil aplicación",
-		],
 	},
 	{
 		id: 1038,
@@ -581,11 +416,6 @@ export const Productos = [
 		categoria: "Accesorios",
 		stock: 15,
 		tags: ["gato", "rascador", "base", "sisal", "juguetes"],
-		palabrasClave: [
-			"prevención de daños",
-			"estimulación felina",
-			"ejercicio y juego",
-		],
 	},
 	{
 		id: 1039,
@@ -597,11 +427,6 @@ export const Productos = [
 		categoria: "Alimentos",
 		stock: 35,
 		tags: ["perro", "razas grandes", "comida", "nutrientes", "proteínas"],
-		palabrasClave: [
-			"alimentación para razas grandes",
-			"nutrición específica",
-			"sabor adaptado",
-		],
 	},
 	{
 		id: 1040,
@@ -613,11 +438,6 @@ export const Productos = [
 		categoria: "Higiene",
 		stock: 30,
 		tags: ["perro", "acondicionador", "pelaje", "vitaminas", "suavizante"],
-		palabrasClave: [
-			"cuidado del pelaje",
-			"suavidad y brillo",
-			"fórmula enriquecida",
-		],
 	},
 	{
 		id: 1041,
@@ -629,11 +449,6 @@ export const Productos = [
 		categoria: "Juguetes",
 		stock: 25,
 		tags: ["perro", "juguete", "masticación", "goma", "dientes"],
-		palabrasClave: [
-			"limpieza dental",
-			"fortalecimiento de mandíbula",
-			"resistente",
-		],
 	},
 	{
 		id: 1042,
@@ -645,11 +460,6 @@ export const Productos = [
 		categoria: "Hábitats",
 		stock: 30,
 		tags: ["reptiles", "lámpara", "calor", "bienestar", "terrario"],
-		palabrasClave: [
-			"calor esencial",
-			"bienestar de reptiles",
-			"compatibilidad con terrarios",
-		],
 	},
 	{
 		id: 1043,
@@ -661,11 +471,6 @@ export const Productos = [
 		categoria: "Alimentos",
 		stock: 20,
 		tags: ["pájaros", "exóticos", "comida", "semillas", "frutas"],
-		palabrasClave: [
-			"dieta balanceada",
-			"nutrición exótica",
-			"alimento variado",
-		],
 	},
 	{
 		id: 1044,
@@ -677,7 +482,6 @@ export const Productos = [
 		categoria: "Accesorios",
 		stock: 25,
 		tags: ["hámster", "rascador", "salud", "jaula", "no tóxico"],
-		palabrasClave: ["cuidado de uñas", "salud de hámster", "fácil instalación"],
 	},
 	{
 		id: 1045,
@@ -689,11 +493,6 @@ export const Productos = [
 		categoria: "Accesorios",
 		stock: 30,
 		tags: ["conejo", "camita", "suave", "acolchada", "lavable"],
-		palabrasClave: [
-			"comodidad para conejos",
-			"descanso acogedor",
-			"material duradero",
-		],
 	},
 	{
 		id: 1046,
@@ -705,11 +504,6 @@ export const Productos = [
 		categoria: "Higiene",
 		stock: 20,
 		tags: ["perro", "cuidado", "uñas", "cortauñas", "lima"],
-		palabrasClave: [
-			"mantenimiento de uñas",
-			"salud canina",
-			"herramientas de cuidado",
-		],
 	},
 	{
 		id: 1047,
@@ -721,11 +515,6 @@ export const Productos = [
 		categoria: "Higiene",
 		stock: 15,
 		tags: ["gato", "caja", "arena", "autolimpiante", "control de olores"],
-		palabrasClave: [
-			"sistema automatizado",
-			"fácil mantenimiento",
-			"control avanzado de olores",
-		],
 	},
 	{
 		id: 1048,
@@ -737,11 +526,6 @@ export const Productos = [
 		categoria: "Juguetes",
 		stock: 25,
 		tags: ["pájaros", "juguete", "cuerda", "interactivo", "seguro"],
-		palabrasClave: [
-			"estimulación física",
-			"juguete duradero",
-			"actividad mental",
-		],
 	},
 	{
 		id: 1049,
@@ -753,11 +537,6 @@ export const Productos = [
 		categoria: "Accesorios",
 		stock: 20,
 		tags: ["gato", "gatera", "seguridad", "acceso", "resistente"],
-		palabrasClave: [
-			"acceso controlado",
-			"seguridad para gatos",
-			"material duradero",
-		],
 	},
 	{
 		id: 1050,
@@ -769,11 +548,6 @@ export const Productos = [
 		categoria: "Alimentos",
 		stock: 30,
 		tags: ["tortuga", "comida", "nutrientes", "calcio", "acuario"],
-		palabrasClave: [
-			"alimentación para tortugas",
-			"nutrición esencial",
-			"calcio para tortugas",
-		],
 	},
 	{
 		id: 1051,
@@ -785,11 +559,6 @@ export const Productos = [
 		categoria: "Medicamentos",
 		stock: 30,
 		tags: ["perro", "antipulgas", "pipetas", "eficaz", "fácil de aplicar"],
-		palabrasClave: [
-			"control de pulgas",
-			"tratamiento seguro",
-			"fácil aplicación",
-		],
 	},
 	{
 		id: 1052,
@@ -801,6 +570,5 @@ export const Productos = [
 		categoria: "Accesorios",
 		stock: 15,
 		tags: ["gato", "escalera", "varios niveles", "resistente", "montaje fácil"],
-		palabrasClave: ["acceso a alturas", "escalera robusta", "comodidad felina"],
 	},
 ];
