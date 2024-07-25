@@ -18,7 +18,6 @@ function NavBar() {
 		<div className="navegacion position-sticky">
 			<div className="navegacion-sup d-flex align-items-center justify-content-around text-center w-75 mx-auto">
 				<Link to={"/"}>
-					{" "}
 					<img
 						className="imgIco"
 						src="https://cdn-icons-png.flaticon.com/128/16779/16779323.png"

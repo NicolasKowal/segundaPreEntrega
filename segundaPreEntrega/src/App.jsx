@@ -11,6 +11,7 @@ import NoPage from "./components/noPage/NoPage";
 import ProductDetail from "./components/productDetail/ProductDetail";
 
 import ItemListContainer from "./components/itemListContainer/ItemListContainer";
+import ItemListContainerAnimal from "./components/itemListContainerAnimal/ItemListContainerAnimal";
 
 function App() {
 	return (
@@ -25,6 +26,8 @@ function App() {
 						path="productos/:categoria/producto/:id"
 						element={<ProductDetail />}
 					/>
+					<Route path=":animal/" element={<ItemListContainerAnimal />}></Route>
+					<Route path=":animal/producto/:id" element={<ProductDetail />} />
 					<Route path="*" element={<NoPage />} />
 				</Route>
 			</Routes>

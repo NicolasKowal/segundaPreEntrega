@@ -13,6 +13,7 @@ h3 {
 	height: 75px;
 }
 .detalleProducto img {
+	border-radius: 50%;
 	margin: 0 auto;
 	height: 300px;
 	width: 300px;
