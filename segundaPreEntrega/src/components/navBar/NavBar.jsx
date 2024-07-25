@@ -8,7 +8,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 function NavBar() {
 	const busqueda = useRef(null);
-	const [busquedaRef, setBusquedaRef] = useState("");
+	const [valor, setValor] = useState("");
 	let categorias = Productos.map((p) => p.categoria);
 	let categoriasFitradas = ["Todos"];
 	categorias.forEach((categoria) => {
@@ -17,7 +17,7 @@ function NavBar() {
 		}
 	});
 	const handleClick = () => {
-		setBusquedaRef(busqueda.current.value);
+		setValor(busqueda.current.value);
 	};
 	return (
 		<div className="navegacion position-sticky">
@@ -32,7 +32,7 @@ function NavBar() {
 
 				<div className="buscador d-flex align-items-center justify-content-center text-center w-50 mx-auto">
 					<input onChange={handleClick} ref={busqueda} type="text" />
-					<Link to={`/busqueda/${busquedaRef}`}>
+					<Link to={`/busqueda/${valor}`}>
 						<button className="btn btn-sm btn-outline-secondary">Buscar</button>
 					</Link>
 				</div>
