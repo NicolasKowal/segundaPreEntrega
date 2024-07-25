@@ -7,16 +7,21 @@ import "./cart.css";
 
 function Cart() {
 	const [cantidadProductos, setCantidadProductos] = useState(0);
-	const HandleClick = () => {
+
+	useEffect(() => {
+		let total = productosComprados.reduce(
+			(acum, producto) => acum + producto.cantidad,
+			0
+		);
+		setCantidadProductos(total);
+	}, [cantidadProductos]);
+
+	const handleClick = () => {
 		console.log(productosComprados);
 	};
+
 	return (
-		<div
-			className="carro"
-			onClick={() => {
-				HandleClick();
-			}}
-		>
+		<div className="carro" onClick={handleClick}>
 			<ImCart size="30px" />
 			<p>{cantidadProductos}</p>
 		</div>

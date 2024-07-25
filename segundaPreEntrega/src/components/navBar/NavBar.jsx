@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import Cart from "../cart/Cart";
 import { Productos } from "../Productos";
@@ -7,6 +7,8 @@ import "./navbar.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function NavBar() {
+	const busqueda = useRef(null);
+	const [busquedaRef, setBusquedaRef] = useState("");
 	let categorias = Productos.map((p) => p.categoria);
 	let categoriasFitradas = ["Todos"];
 	categorias.forEach((categoria) => {
@@ -14,6 +16,9 @@ function NavBar() {
 			categoriasFitradas.push(categoria);
 		}
 	});
+	const handleClick = () => {
+		setBusquedaRef(busqueda.current.value);
+	};
 	return (
 		<div className="navegacion position-sticky">
 			<div className="navegacion-sup d-flex align-items-center justify-content-around text-center w-75 mx-auto">
@@ -26,8 +31,10 @@ function NavBar() {
 				</Link>
 
 				<div className="buscador d-flex align-items-center justify-content-center text-center w-50 mx-auto">
-					<input type="text" />
-					<button className="btn btn-sm btn-outline-secondary">Buscar</button>
+					<input onChange={handleClick} ref={busqueda} type="text" />
+					<Link to={`/busqueda/${busquedaRef}`}>
+						<button className="btn btn-sm btn-outline-secondary">Buscar</button>
+					</Link>
 				</div>
 				<div>
 					<Cart />

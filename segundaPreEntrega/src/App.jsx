@@ -12,6 +12,7 @@ import ProductDetail from "./components/productDetail/ProductDetail";
 
 import ItemListContainer from "./components/itemListContainer/ItemListContainer";
 import ItemListContainerAnimal from "./components/itemListContainerAnimal/ItemListContainerAnimal";
+import ResultadoBusqueda from "./components/resultadoBusqueda/ResultadoBusqueda";
 
 function App() {
 	return (
@@ -26,8 +27,9 @@ function App() {
 						path="productos/:categoria/producto/:id"
 						element={<ProductDetail />}
 					/>
-					<Route path=":animal/" element={<ItemListContainerAnimal />}></Route>
+					<Route path=":animal/" element={<ItemListContainerAnimal />} />
 					<Route path=":animal/producto/:id" element={<ProductDetail />} />
+					<Route path="busqueda/:valor" element={<ResultadoBusqueda />} />
 					<Route path="*" element={<NoPage />} />
 				</Route>
 			</Routes>
