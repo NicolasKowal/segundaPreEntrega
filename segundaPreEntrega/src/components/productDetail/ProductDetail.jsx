@@ -37,7 +37,7 @@ function ProductDetail() {
 			</div>
 			<div className="p-3 d-flex align-items-center justify-content-end w-75">
 				<Link to={"/productos/Todos"}>
-					<button className="btn btn-primary">Volver</button>
+					<button className="btn btn-secondary">Volver</button>
 				</Link>
 			</div>
 		</>

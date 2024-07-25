@@ -17,11 +17,15 @@ function NavBar() {
 	return (
 		<div className="navegacion position-sticky">
 			<div className="navegacion-sup d-flex align-items-center justify-content-around text-center w-75 mx-auto">
-				<img
-					className="imgIco"
-					src="https://cdn-icons-png.flaticon.com/128/16779/16779323.png"
-					alt="img"
-				/>
+				<Link to={"/"}>
+					{" "}
+					<img
+						className="imgIco"
+						src="https://cdn-icons-png.flaticon.com/128/16779/16779323.png"
+						alt="img"
+					/>
+				</Link>
+
 				<div className="buscador d-flex align-items-center justify-content-center text-center w-50 mx-auto">
 					<input type="text" />
 					<button className="btn btn-sm btn-outline-secondary">Buscar</button>
@@ -31,7 +35,6 @@ function NavBar() {
 				</div>
 			</div>
 			<nav className="navegacion-inf navbar navbar-expand-lg w-75 mx-auto">
-				<Link to={"/"}></Link>
 				<button
 					className="navbar-toggler"
 					type="button"
