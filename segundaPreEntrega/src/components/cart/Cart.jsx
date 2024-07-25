@@ -7,10 +7,10 @@ import "./cart.css";
 function Cart() {
 	const [cantidadProductos, setCantidadProductos] = useState(0);
 	return (
-		<a className="carro">
+		<div className="carro">
 			<ImCart size="30px" />
 			<p>{cantidadProductos}</p>
-		</a>
+		</div>
 	);
 }
 

@@ -1,17 +1,26 @@
 .imgIco {
 	height: 50px;
 }
-nav {
-	height: 75px;
+
+.buscador input {
+	height: 35px;
+	width: 70%;
+	border-radius: 15px;
+}
+.navegacion {
+	height: 110px;
+	padding-top: 10px;
 	position: sticky;
-	top: 0; /* Ajusta para estar justo debajo del header */
-	z-index: 1000; /* Asegúrate de que esté por encima del header y otros elementos */
+	top: 0;
+	background: whitesmoke;
+	z-index: 1000;
 }
 
+.navbar,
 .navbar-nav {
-	width: 50%;
+	margin: 0 auto;
+	width: 100%;
 	display: flex;
-	background: whitesmoke;
-	justify-content: space-around;
 	align-items: center;
+	justify-content: space-around;
 }
