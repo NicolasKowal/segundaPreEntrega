@@ -14,21 +14,21 @@ function Header() {
 				<div className="carousel-inner">
 					<div className="carousel-item active">
 						<img
-							src="https://placehold.co/1920x400"
+							src="https://thumbs.dreamstime.com/z/group-domestic-pets-over-white-banner-row-hanging-blank-image-sized-to-fit-popular-social-media-photo-placeholder-64552469.jpg"
 							className="d-block w-100"
 							alt="..."
 						/>
 					</div>
 					<div className="carousel-item">
 						<img
-							src="https://placehold.co/1920x450"
+							src="https://as2.ftcdn.net/v2/jpg/04/82/63/77/1000_F_482637782_4CV39Ql60HFvdu8Na3ISyoBMe5Mk5Ld8.jpg"
 							className="d-block w-100"
 							alt="..."
 						/>
 					</div>
 					<div className="carousel-item">
 						<img
-							src="https://placehold.co/1920x470"
+							src="https://as1.ftcdn.net/v2/jpg/04/23/07/18/1000_F_423071856_JIf4hUWaBPP4Rzd3BUEQXgJntTsI1l4A.jpg"
 							className="d-block w-100"
 							alt="..."
 						/>

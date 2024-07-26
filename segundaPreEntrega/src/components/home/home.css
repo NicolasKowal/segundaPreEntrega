@@ -16,10 +16,5 @@
 }
 
 .container-img img:hover {
-	filter: opacity(100%);
 	scale: 1.1;
-}
-
-.container-img img:not(:hover) {
-	filter: opacity(75%);
 }
