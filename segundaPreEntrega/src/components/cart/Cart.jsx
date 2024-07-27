@@ -1,6 +1,8 @@
 import React, { useState, useContext } from "react";
+
 import { ImCart } from "react-icons/im";
 import { ShopListContext } from "../../context";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./cart.css";
 

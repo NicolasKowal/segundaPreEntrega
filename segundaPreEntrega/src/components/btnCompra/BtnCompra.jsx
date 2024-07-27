@@ -1,5 +1,6 @@
 import React, { useState, useContext } from "react";
 import { ShopListContext } from "../../context";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./btncompra.css";
 
@@ -14,13 +15,11 @@ function BtnCompra({ id, nombre, precio, stock }) {
 				const total = cantidad * precio;
 				const newCartItem = { id, nombre, cantidad, total };
 				setListaCarrito([...listaCarrito, newCartItem]);
-				console.log([...listaCarrito, newCartItem]);
 			} else {
-				const updatedCart = [...listaCarrito];
-				updatedCart[buscarEnArray].cantidad += cantidad;
-				updatedCart[buscarEnArray].total += cantidad * precio;
-				setListaCarrito(updatedCart);
-				console.log(updatedCart);
+				const actualizarCarro = [...listaCarrito];
+				actualizarCarro[buscarEnArray].cantidad += cantidad;
+				actualizarCarro[buscarEnArray].total += cantidad * precio;
+				setListaCarrito(actualizarCarro);
 			}
 		}
 	};
