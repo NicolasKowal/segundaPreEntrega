@@ -8,9 +8,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 function Home() {
 	return (
 		<>
-			<br />
 			<Header />
-			<h1></h1>
 			<div className="container-img">
 				<Link
 					className="d-flex flex-column justify-content-center align-items-center"

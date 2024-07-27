@@ -30,6 +30,10 @@ function App() {
 					<Route path=":animal/" element={<ItemListContainerAnimal />} />
 					<Route path=":animal/producto/:id" element={<ProductDetail />} />
 					<Route path="busqueda/:valor" element={<ResultadoBusqueda />} />
+					<Route
+						path="busqueda/:valor/producto/:id"
+						element={<ProductDetail />}
+					/>
 					<Route path="*" element={<NoPage />} />
 				</Route>
 			</Routes>

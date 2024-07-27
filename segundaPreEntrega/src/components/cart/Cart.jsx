@@ -1,30 +1,33 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { ImCart } from "react-icons/im";
-import { productosComprados } from "../ListaCompra";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./cart.css";
 
 function Cart() {
-	const [cantidadProductos, setCantidadProductos] = useState(0);
-
-	useEffect(() => {
-		let total = productosComprados.reduce(
-			(acum, producto) => acum + producto.cantidad,
-			0
-		);
-		setCantidadProductos(total);
-	}, [cantidadProductos]);
+	const [xButton, setButton] = useState(false);
+	const [estilo, setEstilo] = useState({ display: "none" });
 
 	const handleClick = () => {
-		console.log(productosComprados);
+		xButton == false
+			? setEstilo({ display: "flex" })
+			: setEstilo({ display: "none" });
+		setButton(!xButton);
 	};
-
 	return (
-		<div className="carro" onClick={handleClick}>
-			<ImCart size="30px" />
-			<p>{cantidadProductos}</p>
-		</div>
+		<>
+			<div className="carro" onClick={handleClick}>
+				<ImCart size="30px" />
+				<p>0</p>
+			</div>
+			<div style={estilo} className="compra">
+				<div className="closeBar">
+					<button onClick={handleClick} className="close">
+						X
+					</button>
+				</div>
+			</div>
+		</>
 	);
 }
 

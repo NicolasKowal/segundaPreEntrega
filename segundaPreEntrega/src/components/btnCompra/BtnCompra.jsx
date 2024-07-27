@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { productosComprados } from "../ListaCompra";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./btncompra.css";
@@ -7,10 +6,7 @@ import "./btncompra.css";
 function BtnCompra({ nombre, precio, stock }) {
 	const [cantidad, setCantidad] = useState(0);
 
-	const HandleClick = (nombre, cantidad) => {
-		cantidad > 0 ? productosComprados.push({ nombre, precio, cantidad }) : "";
-		console.log(productosComprados);
-	};
+	const HandleClick = (nombre, cantidad) => {};
 	return (
 		<>
 			<div className="divCompra">
