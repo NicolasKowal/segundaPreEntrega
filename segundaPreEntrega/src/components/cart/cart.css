@@ -11,17 +11,28 @@
 	text-decoration: none;
 }
 .compra {
-	display: flex;
+	border-radius: 10px;
 	width: 35%;
 	height: 500px;
+	width: 50%;
 	position: absolute;
 	right: 10px;
 	top: 10px;
+	display: flex;
+	flex-direction: column;
 	z-index: 100000;
 	background: whitesmoke;
 	border: 1px solid black;
 }
-
+.closeBar {
+	border-radius: 10px 10px 00px 0px;
+	padding: 10px;
+	background: grey;
+	height: 10%;
+	width: 100%;
+	display: flex;
+	justify-content: end;
+}
 .close {
 	height: 30px;
 	width: 30px;
@@ -32,9 +43,36 @@
 	justify-content: center;
 }
 
-.closeBar {
-	padding: 10px;
+.finalizarCompra {
+	border-radius: 00px 0px 10px 10px;
+	background: grey;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 10%;
+}
+.finalizarCompra button {
+	height: 75%;
+	width: 200px;
+	border-radius: 5px;
+}
+.listaS {
 	width: 100%;
 	display: flex;
-	justify-content: end;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.listaS li {
+	list-style: none;
+	height: 10%;
+	width: 80%;
+	display: flex;
+	justify-content: space-around;
+}
+.listaS li:nth-child(2n) {
+	background: rgb(192, 192, 192);
 }

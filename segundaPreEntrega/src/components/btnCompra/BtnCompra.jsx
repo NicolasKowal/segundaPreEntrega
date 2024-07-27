@@ -1,19 +1,39 @@
-import React, { useState } from "react";
-
+import React, { useState, useContext } from "react";
+import { ShopListContext } from "../../context";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./btncompra.css";
 
-function BtnCompra({ nombre, precio, stock }) {
+function BtnCompra({ id, nombre, precio, stock }) {
 	const [cantidad, setCantidad] = useState(0);
+	const { listaCarrito, setListaCarrito } = useContext(ShopListContext);
 
-	const HandleClick = (nombre, cantidad) => {};
+	const HandleClick = (nombre, cantidad) => {
+		if (cantidad !== 0) {
+			let buscarEnArray = listaCarrito.findIndex((x) => x.id === id);
+			if (buscarEnArray === -1) {
+				const total = cantidad * precio;
+				const newCartItem = { id, nombre, cantidad, total };
+				setListaCarrito([...listaCarrito, newCartItem]);
+				console.log([...listaCarrito, newCartItem]);
+			} else {
+				const updatedCart = [...listaCarrito];
+				updatedCart[buscarEnArray].cantidad += cantidad;
+				updatedCart[buscarEnArray].total += cantidad * precio;
+				setListaCarrito(updatedCart);
+				console.log(updatedCart);
+			}
+		}
+	};
+
 	return (
 		<>
 			<div className="divCompra">
 				<button
 					className="btn btn-dark"
 					onClick={() => {
-						cantidad != 0 ? setCantidad(cantidad - 1) : "";
+						if (cantidad !== 0) {
+							setCantidad(cantidad - 1);
+						}
 					}}
 				>
 					-
@@ -22,7 +42,9 @@ function BtnCompra({ nombre, precio, stock }) {
 				<button
 					className="btn btn-dark"
 					onClick={() => {
-						cantidad < stock - 1 ? setCantidad(cantidad + 1) : "";
+						if (cantidad < stock) {
+							setCantidad(cantidad + 1);
+						}
 					}}
 				>
 					+

@@ -1,7 +1,13 @@
-import { createContext } from "react";
+import React, { createContext, useState } from "react";
 
-export const listaCarrito = [];
+export const ShopListContext = createContext();
 
-const ShopListShare = createContext(listaCarrito);
+export const ShopListProvider = ({ children }) => {
+	const [listaCarrito, setListaCarrito] = useState([]);
 
-export default ShopListShare;
+	return (
+		<ShopListContext.Provider value={{ listaCarrito, setListaCarrito }}>
+			{children}
+		</ShopListContext.Provider>
+	);
+};
