@@ -9,12 +9,15 @@ import "./cart.css";
 function Cart() {
 	const [xButton, setButton] = useState(false);
 	const [estilo, setEstilo] = useState({ display: "none" });
-	const { listaCarrito } = useContext(ShopListContext);
+	const { listaCarrito, setListaCarrito } = useContext(ShopListContext);
 
 	const handleClick = () => {
 		setEstilo(xButton ? { display: "none" } : { display: "flex" });
 		setButton(!xButton);
-		console.log(listaCarrito);
+	};
+
+	const deleteHandleClick = (id) => {
+		setListaCarrito(listaCarrito.filter((elemento) => elemento.id !== id));
 	};
 
 	return (
@@ -25,24 +28,38 @@ function Cart() {
 			</div>
 			<div style={estilo} className="compra">
 				<div className="closeBar">
-					<button onClick={handleClick} className="close">
+					<button className="btn btn-dark" onClick={handleClick}>
 						X
 					</button>
 				</div>
 				<div>
-					<ul className="listaS">
-						{listaCarrito.map((x) => (
-							<li key={x.id}>
-								<p>{x.cantidad}</p>
-								<p>{x.nombre}</p>
-								<p> $ {x.total}</p>
-								<button>D</button>
+					<ul className="listaS d-flex align-items-center justify-content-center flex-column">
+						{listaCarrito.map((elemento) => (
+							<li
+								className="row-12 d-flex align-items-center justify-content-center"
+								key={elemento.id}
+							>
+								<p className="col-1">{elemento.cantidad}</p>
+								<p className="col-6">{elemento.nombre}</p>
+								<p className="col-3">$ {elemento.total}</p>
+								<button
+									className="col-2 btn btn-dark d-flex align-items-center justify-content-center"
+									onClick={() => {
+										deleteHandleClick(elemento.id);
+									}}
+								>
+									&#128465;
+								</button>
 							</li>
 						))}
 					</ul>
 				</div>
 				<div className="finalizarCompra">
-					<button>Finalizar compra</button>
+					{listaCarrito.length === 0 ? (
+						<button disabled>Finalizar compra</button>
+					) : (
+						<button className="btn btn-dark">Finalizar compra</button>
+					)}
 				</div>
 			</div>
 		</>

@@ -26,21 +26,13 @@
 }
 .closeBar {
 	border-radius: 10px 10px 00px 0px;
-	padding: 10px;
+	padding-right: 10px;
 	background: grey;
 	height: 10%;
 	width: 100%;
 	display: flex;
-	justify-content: end;
-}
-.close {
-	height: 30px;
-	width: 30px;
-	border-radius: 5px;
-	text-decoration: solid;
-	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: end;
 }
 
 .finalizarCompra {
@@ -58,20 +50,28 @@
 	height: 75%;
 	width: 200px;
 	border-radius: 5px;
-}
-.listaS {
-	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	flex-direction: column;
+}
+.listaS {
+	width: 100%;
+	height: auto;
+	padding: 0;
 }
 .listaS li {
 	list-style: none;
 	height: 10%;
-	width: 80%;
-	display: flex;
+	width: 100%;
 	justify-content: space-around;
+}
+.listaS li button {
+	height: 30px;
+	width: 30px;
+	font-size: 0.8em;
+}
+.listaS li p {
+	height: 100%;
 }
 .listaS li:nth-child(2n) {
 	background: rgb(192, 192, 192);
