@@ -1,8 +1,12 @@
+.titulo {
+	height: 75px;
+	align-items: center;
+}
 .container-redes {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 300px;
+	height: 150px;
 	column-gap: 150px;
 }
 .container-redes img {
@@ -19,10 +23,12 @@
 	width: 40%;
 }
 .fila {
-	width: 100%;
+	margin: 0 auto;
+	width: 90%;
 	height: 50px;
 	display: flex;
 	align-items: center;
+	justify-content: center;
 }
 .fila legend {
 	width: 30%;
@@ -31,19 +37,21 @@
 	width: 100%;
 	height: 70%;
 	border-radius: 7px;
-	border: 1px black solid;
 }
 .mensaje {
-	height: 150px;
-	margin-top: 15px;
+	height: 200px;
+	margin-top: 50px;
 	display: flex;
 	flex-direction: column;
 }
-.mensaje legend {
-	height: 20%;
-	display: flex;
-	justify-content: center;
-}
 .mensaje textarea {
-	height: 80%;
+	margin: 0 auto;
+	height: 100%;
+	width: 90%;
+}
+.botonera {
+	height: 100px;
+}
+.botonera button {
+	height: 50px;
 }

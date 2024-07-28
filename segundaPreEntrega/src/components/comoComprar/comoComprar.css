@@ -1,5 +1,5 @@
 .contenedor-flechas {
-	height: 586px;
+	min-height: 710px;
 	width: 100%;
 	column-gap: 50px;
 }
@@ -16,6 +16,7 @@
 
 .contenedor-flechas p:nth-child(2n) {
 	font-size: 5em;
+	height: 125px;
 }
 
 .contenedor-flechas p:hover {
