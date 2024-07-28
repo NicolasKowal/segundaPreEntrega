@@ -6,32 +6,31 @@
 	background: whitesmoke;
 	z-index: 1000;
 }
-.navegacion-sup,
-.navegacion-inf {
-	height: 50%;
-}
 .imgIco {
 	height: 50px;
 }
 .buscador {
+	width: 300px;
 	gap: 10px;
 }
 .buscador input {
 	padding: 10px;
 	height: 35px;
-	width: 80%;
+	width: 500px;
 	border-radius: 15px;
 }
 .buscador button {
 	height: 35px;
-	display: flex;
-	align-items: center;
 }
 .navbar,
 .navbar-nav {
 	margin: 0 auto;
+	height: 100%;
 	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
+}
+.row {
+	height: 50%;
 }

@@ -12,8 +12,8 @@
 }
 .compra {
 	border-radius: 10px;
-	width: 35%;
-	height: 500px;
+	width: 100px;
+	min-height: 500px;
 	width: 50%;
 	position: absolute;
 	right: 10px;

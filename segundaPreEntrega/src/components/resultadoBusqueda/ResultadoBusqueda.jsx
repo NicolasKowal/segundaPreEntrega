@@ -10,11 +10,9 @@ function ResultadoBusqueda() {
 	let productosFiltrados = Productos.filter((e) => e.tags.includes(valor));
 	if (productosFiltrados.length === 0)
 		return (
-			<img
-				className="typeOfError"
-				src="https://http.dog/498.jpg"
-				alt="not-found"
-			/>
+			<div className="typeOfError">
+				<img src="https://http.dog/498.jpg" alt="not-found" />
+			</div>
 		);
 	return (
 		<div className="grid-container">
