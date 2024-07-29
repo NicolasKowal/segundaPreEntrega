@@ -1,6 +1,23 @@
-.container-img {
-	height: 400px;
+.container-separador {
+	margin-block: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 75px;
 	width: 100%;
+}
+.separador {
+	background: gray;
+	height: 80%;
+	width: 90%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.container-img {
+	margin: 0 auto;
+	height: 350px;
+	width: 90%;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
@@ -17,4 +34,11 @@
 
 .container-img img:hover {
 	scale: 1.1;
+}
+
+.masVendido {
+	background: gray;
+	width: 90%;
+	height: 600px;
+	margin: 0 auto;
 }

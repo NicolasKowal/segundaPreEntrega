@@ -1,14 +1,24 @@
-import React, { useState } from "react";
+import React from "react";
 import Header from "../header/Header";
 import { Link } from "react-router-dom";
+import { Productos } from "../Productos";
+import ItemList from "../itemList/ItemList";
 
 import "./home.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function Home() {
+	let productosMenorStock = Productos.filter((producto) => producto.stock < 20);
+	productosMenorStock = productosMenorStock.slice(
+		5,
+		productosMenorStock.length - 1
+	);
 	return (
 		<>
 			<Header />
+			<div className="container-separador">
+				<h1 className="separador">Busca todo lo que tu mascota necesite</h1>
+			</div>
 			<div className="container-img">
 				<Link
 					className="d-flex flex-column justify-content-center align-items-center"
@@ -65,6 +75,20 @@ function Home() {
 					/>
 					<h5 className="p-3">Conejo</h5>
 				</Link>
+			</div>
+			<div className="container-separador">
+				<h2 className="separador">Lo mas vendido</h2>
+			</div>
+			<div className="d-flex align-items-center justify-content-around masVendido">
+				{productosMenorStock.map((producto) => (
+					<ItemList
+						nombre={producto.nombre}
+						precio={producto.precio}
+						stock={producto.stock}
+						id={producto.id}
+						imagen={producto.imagen}
+					/>
+				))}
 			</div>
 		</>
 	);
