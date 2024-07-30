@@ -82,6 +82,7 @@ function Home() {
 			<div className="d-flex align-items-center justify-content-around masVendido">
 				{productosMenorStock.map((producto) => (
 					<ItemList
+						key={producto.id}
 						nombre={producto.nombre}
 						precio={producto.precio}
 						stock={producto.stock}

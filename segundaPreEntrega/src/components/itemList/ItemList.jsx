@@ -1,11 +1,29 @@
-import React from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
-import BtnCompra from "../btnCompra/BtnCompra";
+import { ShopListContext } from "../../context";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./itemlist.css";
 
 function ItemList({ id, nombre, precio, imagen, stock }) {
+	const [cantidad, setCantidad] = useState(0);
+	const { listaCarrito, setListaCarrito } = useContext(ShopListContext);
+
+	const HandleClick = (nombre, cantidad) => {
+		if (cantidad !== 0) {
+			let buscarEnArray = listaCarrito.findIndex((x) => x.id === id);
+			if (buscarEnArray === -1) {
+				const total = cantidad * precio;
+				const newCartItem = { id, nombre, cantidad, total };
+				setListaCarrito([...listaCarrito, newCartItem]);
+			} else {
+				const actualizarCarro = [...listaCarrito];
+				actualizarCarro[buscarEnArray].cantidad += cantidad;
+				actualizarCarro[buscarEnArray].total += cantidad * precio;
+				setListaCarrito(actualizarCarro);
+			}
+		}
+	};
 	return (
 		<>
 			<div className="card">
@@ -16,7 +34,37 @@ function ItemList({ id, nombre, precio, imagen, stock }) {
 					<h5 className="card-title">{nombre}</h5>
 					<p className="precio">${precio}</p>
 				</div>
-				<BtnCompra id={id} stock={stock} nombre={nombre} precio={precio} />
+				<div className="divCompra">
+					<button
+						className="btn btn-dark"
+						onClick={() => {
+							if (cantidad !== 0) {
+								setCantidad(cantidad - 1);
+							}
+						}}
+					>
+						-
+					</button>
+					<p className="d-flex align-items-center">{cantidad}</p>
+					<button
+						className="btn btn-dark"
+						onClick={() => {
+							if (cantidad < stock) {
+								setCantidad(cantidad + 1);
+							}
+						}}
+					>
+						+
+					</button>
+				</div>
+				<button
+					className="btn btn-dark"
+					onClick={() => {
+						HandleClick(nombre, cantidad);
+					}}
+				>
+					Agregar al carrito
+				</button>
 			</div>
 		</>
 	);
